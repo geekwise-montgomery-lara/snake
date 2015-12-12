@@ -88,20 +88,23 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     snake = document.createElement('li');
     snake.setAttribute('id','snake');
-    snake.style.backgroundColor = '#3D9E1C';
+    snake.style.backgroundColor = 'darkorange';
     snake.style.width = '150px';
-    snake.style.height = '150px';
-    snake.textContent = ' ‾ ‿ ⁀';
+    snake.style.height = '50px';
+    snake.textContent = '☺';
     snake.style.position = 'relative';
     snake.style.left = 0;
-    snake.style.top = 0;
+    snake.style.top = -5;
+    snake.style.fontSize = '1.5em';
+    snake.style.paddingBottom = '10px';
+    snake.style.borderRadius = '10%';
     
     
 
     
     container = document.createElement('ul');
     container.setAttribute('id','container');
-    container.style.backgroundColor = '#7164E8';
+    container.style.backgroundImage = "url('http://cache3.asset-cache.net/xd/115983687.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE4808BEACCD5B99883D173E7DAAD5CA53869331CEFF335C6C845033224D90572B778')";
     
     document.body.appendChild(container);
     container.appendChild(snake);
@@ -114,12 +117,17 @@ document.addEventListener('DOMContentLoaded',function(event){
         mine.style.backgroundColor = 'firebrick';
         mine.style.width = '35px';
         mine.style.height = '35px';
-        mine.textContent = '☢ ';
+        mine.textContent = ' ⦾';
         mine.style.position = 'absolute';
         mine.style.left = 0;
         mine.style.top = 0;
         mine.style.left = Math.random()* container.offsetWidth - 30 + 'px';
         mine.style.top =  Math.random()* container.offsetHeight - 30 + 'px';
+        mine.style.color = 'gray';
+        mine.style.textAlign = 'center';
+        mine.style.paddingBottom = '10px';
+        // mine.style.fontSize = '1em';
+        mine.style.borderRadius = '40%';
 
         
         container.appendChild(mine);
@@ -144,7 +152,7 @@ document.addEventListener('keydown',function(event){
                   if(overlap(snake,mines[i]) === true){
                       mines[i].remove();
                       check_mines();
-                      snake.textContent += '☞';
+                      snake.textContent += '☺';
                   }
        
        }

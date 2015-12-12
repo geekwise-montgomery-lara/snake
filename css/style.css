@@ -13,10 +13,10 @@ html,body{
 
 #done{
     font-family: "Courier New", Courier, monospace;
-    font-size: 5em;
+    font-size: 15em;
     color: black;
     text-align: center;
-    padding-top: 22%;
+    padding-top: 20%;
 }
 
 #container{
