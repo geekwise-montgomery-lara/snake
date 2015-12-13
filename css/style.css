@@ -12,11 +12,11 @@ html,body{
 }
 
 #done{
-    font-family: "Courier New", Courier, monospace;
-    font-size: 15em;
+    font-family:Verdana, sans-serif;
+    font-size: 25em;
     color: black;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 #container{

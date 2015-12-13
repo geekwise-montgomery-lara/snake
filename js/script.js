@@ -79,7 +79,7 @@ var speed_width = function(){
 }
 
 var speed_height = function(){
-    return container.offsetHeight / snake.offsetHeight;
+    return container.offsetHeight / snake.offsetHeight * 2;
 }
 
 
@@ -88,10 +88,13 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     snake = document.createElement('li');
     snake.setAttribute('id','snake');
-    snake.style.backgroundColor = 'darkorange';
-    snake.style.width = '150px';
-    snake.style.height = '50px';
-    snake.textContent = '☺';
+    snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/MrCogan.png')";
+    snake.style.backgroundSize = '90px 90px';
+    snake.style.backgroundRepeat = 'no-repeat';
+    snake.style.float = 'left';
+    snake.style.width = '85px';
+    snake.style.height = '85px';
+    // snake.textContent = '';
     snake.style.position = 'relative';
     snake.style.left = 0;
     snake.style.top = -5;
@@ -104,26 +107,28 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     container = document.createElement('ul');
     container.setAttribute('id','container');
-    container.style.backgroundImage = "url('http://cache3.asset-cache.net/xd/115983687.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE4808BEACCD5B99883D173E7DAAD5CA53869331CEFF335C6C845033224D90572B778')";
+    container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG')";
+    container.style.backgroundSize = '100% 100%';
+    container.style.backgroundRepeat = 'no-repeat';
     
     document.body.appendChild(container);
     container.appendChild(snake);
     
     
-   for(var i=0; i < Math.round( Math.random()*1000); i++){
+   for(var i=0; i < Math.round( (Math.random()*1000)*2); i++){
         mine = document.createElement('li');
         mine.setAttribute('id','mine_'+i);
         mine.setAttribute('class','mine');
-        mine.style.backgroundColor = 'firebrick';
+        mine.style.fontSize = '1.5em';
         mine.style.width = '35px';
         mine.style.height = '35px';
-        mine.textContent = ' ⦾';
+        mine.textContent = '☻';
         mine.style.position = 'absolute';
         mine.style.left = 0;
         mine.style.top = 0;
         mine.style.left = Math.random()* container.offsetWidth - 30 + 'px';
         mine.style.top =  Math.random()* container.offsetHeight - 30 + 'px';
-        mine.style.color = 'gray';
+        mine.style.color = '#BFED18';
         mine.style.textAlign = 'center';
         mine.style.paddingBottom = '10px';
         // mine.style.fontSize = '1em';
@@ -147,22 +152,44 @@ document.addEventListener('keydown',function(event){
     //console.log(event.keyCode);
     
     if(up){
-       check_mines();
-       for(var i=0; i< mines.length; i++){
+      check_mines();
+      for(var i=0; i< mines.length; i++){
                   if(overlap(snake,mines[i]) === true){
                       mines[i].remove();
                       check_mines();
-                      snake.textContent += '☺';
+                    //   snake.textContent += '☺';
+                    
+                        // mine = document.createElement('li');
+                        // mine.setAttribute('id','mine_'+i);
+                        // mine.setAttribute('class','mine');
+                        // mine.style.width = '35px';
+                        // mine.style.height = '35px';
+                        // mine.textContent = '☻';
+                        // mine.style.fontSize = '1.5em';
+                        // mine.style.position = 'absolute';
+                        // mine.style.left = 0;
+                        // mine.style.top = 0;
+                        // mine.style.left = Math.random()* container.offsetWidth - 30 + 'px';
+                        // mine.style.top =  Math.random()* container.offsetHeight - 30 + 'px';
+                        // mine.style.color = '#BFED18';
+                        // mine.style.textAlign = 'center';
+                        // mine.style.paddingBottom = '10px';
+                        // // mine.style.fontSize = '1em';
+                        // mine.style.borderRadius = '40%';
+                
+                        
+                        // container.appendChild(mine);
+                   
                   }
        
-       }
+      }
     
       if(mines.length === 0){
           document.body.textContent = 'DONE!';
           document.body.setAttribute('id','done')
-          document.body.style.backgroundColor = '#D4F70F';
-          document.body.style.color = 'white';
-          document.body.style.backgroundImage = "url('http://cache3.asset-cache.net/xd/115983687.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE4808BEACCD5B99883D173E7DAAD5CA53869331CEFF335C6C845033224D90572B778')";
+          document.body.style.backgroundColor = '#BFED18';
+          document.body.style.color = '#BFED18';
+          document.body.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG')";
       }
         
     }
