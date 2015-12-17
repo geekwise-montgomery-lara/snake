@@ -230,12 +230,12 @@ document.addEventListener('keydown',function(event){
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG')";
     };
     if(event.keyCode === Scott){
-        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/meme_lord.PNG')";
+        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/meme_lord_1.png')";
         mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
         mine.style.backgroundSize = '50px 50px';
         mine.style.backgroundRepeat = 'no-repeat';
         mine.textContent = '';
-        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_wallpaper_best.jpg')";
+        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_wallpaper.jpg')";
     };
     if(event.keyCode === Davis){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Davis.PNG')";
@@ -243,7 +243,7 @@ document.addEventListener('keydown',function(event){
         mine.style.backgroundSize = '50px 50px';
         mine.style.backgroundRepeat = 'no-repeat';
         mine.textContent = '';
-        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Davis_wallpaper.jpg')";
+        container.style.backgroundImage = "url('http://wallpapercave.com/wp/yDDxGyn.jpg')";
     };
     if(event.keyCode === Darrian){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Darrian.PNG')";
@@ -270,12 +270,12 @@ document.addEventListener('keydown',function(event){
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Haley_wallpaper.PNG')";
     };
     if(event.keyCode === Colton){
-        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/People (2).png')";
+        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/colton.png')";
         mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
         mine.style.backgroundSize = '50px 50px';
         mine.style.backgroundRepeat = 'no-repeat';
         mine.textContent = '';
-        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/People (2)_wallpaper.png')";
+        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/colton_wallpaper.png')";
     };
     if(event.keyCode === Gus){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gus.PNG')";
@@ -286,7 +286,7 @@ document.addEventListener('keydown',function(event){
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gus_wallpaper.PNG')";
     };
     if(event.keyCode === Gabe){
-        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/IMG_1375 (2).png')";
+        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gabe.png')";
         mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
         mine.style.backgroundSize = '80px 80px';
         mine.style.backgroundRepeat = 'no-repeat';
@@ -307,7 +307,7 @@ document.addEventListener('keydown',function(event){
         mine.style.backgroundSize = '80px 80px';
         mine.style.backgroundRepeat = 'no-repeat';
         mine.textContent = '';
-        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Montgomery_wallpaper.png')";
+        container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Montgomery_wallpaper_best.png')";
     };
     if(event.keyCode === Roger){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Roger.png')";
