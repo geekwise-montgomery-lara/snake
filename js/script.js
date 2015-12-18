@@ -223,131 +223,82 @@ document.addEventListener('keydown',function(event){
     
     if(event.keyCode === Cogan){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/MrCogan.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG')";
     };
+    
     if(event.keyCode === Scott){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/meme_lord_1.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_wallpaper.jpg')";
     };
+    
     if(event.keyCode === Davis){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Davis.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('http://wallpapercave.com/wp/yDDxGyn.jpg')";
     };
+    
     if(event.keyCode === Darrian){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Darrian.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Darrian_wallpaper.PNG')";
     };
+    
     if(event.keyCode === Kevin){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Kevin_1.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Kevin_1_wallpaper.png')";
     };
+    
     if(event.keyCode === Haley){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Haley.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Haley_wallpaper.PNG')";
     };
+    
     if(event.keyCode === Colton){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/colton.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/colton_wallpaper.png')";
     };
+    
     if(event.keyCode === Gus){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gus.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '50px 50px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gus_wallpaper.PNG')";
     };
+    
     if(event.keyCode === Gabe){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gabe.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/gabe_wallpaper.jpg')";
     };
+    
     if(event.keyCode === Climate){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/climate.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/climate_wallpaper.PNG')";
     };
+    
     if(event.keyCode === Montgomery){
-        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Montgomery.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
+        snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Montgomery_best.png')";
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Montgomery_wallpaper_best.png')";
     };
+    
     if(event.keyCode === Roger){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Roger.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/Roger_wallpaper.png')";
     };
+    
     if(event.keyCode === Lindsey){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/lindsey.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "";
         container.style.backgroundColor = 'hotpink';
     };
+    
     if(event.keyCode === Jesse){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/jesse.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/jesse_wallpaper.PNG')";
     };
+    
     if(event.keyCode === Kyle){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/kyle.png')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/kyle_wallpaper.png')";
     };
+    
     if(event.keyCode === Cobi){
         snake.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/cobi.PNG')";
-        mine.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/scott_food.png')";
-        mine.style.backgroundSize = '80px 80px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.textContent = '';
         container.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/cobi_wallpaper.PNG')";
     };
 });
