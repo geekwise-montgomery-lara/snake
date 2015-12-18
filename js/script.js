@@ -164,7 +164,7 @@ document.addEventListener('keydown',function(event){
           document.body.setAttribute('id','done')
           document.body.style.backgroundColor = '#33A82F';
           document.body.style.color = '#EFBF1B';
-          document.body.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG')";
+          document.body.style.backgroundImage = "url('https://snake-geekwisemontgomerylara.c9users.io/images/wallpaper_best.jpg')";
           document.body.style.backgroundSize = '100% 100%';
           document.body.style.backgroundRepeat = 'no-repeat';
       };
