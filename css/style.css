@@ -6,7 +6,10 @@ html,body{
     font-size:62.5%;
     font-family: sans-serif;
     color:#393939;
-    background-color:#f7f9fa;
+    /*background-color:#f7f9fa;*/
+    background-image: url("https://snake-geekwisemontgomerylara.c9users.io/images/campus.PNG");
+    background-size:100% 100%;
+    background-repeat:none;
     box-sizing:border-box;
 
 }
