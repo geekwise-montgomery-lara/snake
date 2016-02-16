@@ -27,6 +27,9 @@ var Kyle = 53;
 var Cobi = 54;
 var Ken = 55;
 var Carbajal = 56;
+var kaleb = 57;
+var michael = 48;
+var jackson = 189; 
 
 var refresh = 32;
 var refresh_2 = 13;
@@ -318,7 +321,19 @@ document.addEventListener('keydown',function(event){
         container.style.backgroundImage = "url('/images/ken_wallpaper.jpg')";
     };
     if(event.keyCode === Carbajal){
-        snake.style.backgroundImage = "url('/images/carbajal.jpg')";
+        snake.style.backgroundImage = "url('/images/carbajal.png')";
         container.style.backgroundImage = "url('/images/carbajal_wallpaper.jpg')";
+    };
+    if(event.keyCode === kaleb){
+        snake.style.backgroundImage = "url('/images/kaleb.png')";
+        container.style.backgroundImage = "url('/images/kaleb_wallpaper.jpg')";
+    };
+    if(event.keyCode === michael){
+        snake.style.backgroundImage = "url('/images/michael.png')";
+        container.style.backgroundImage = "url('/images/michael_wallpaper.png')";
+    };
+    if(event.keyCode === jackson){
+        snake.style.backgroundImage = "url('/images/Jackson.png')";
+        container.style.backgroundImage = "url('/images/Jackson_wallpaper.png')";
     };
 });
