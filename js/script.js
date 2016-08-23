@@ -1,13 +1,13 @@
 var snake; 
 var pellet;
-var mine;
+var food;
 
 var container;
 
-var up = 38;
-var down = 40;
-var left = 37;
-var right = 39;
+var up = 87;
+var down = 83;
+var left = 65;
+var right = 68;
 
 var Cogan = 96;
 var Scott = 97;
@@ -30,6 +30,7 @@ var Carbajal = 56;
 var kaleb = 57;
 var michael = 48;
 var jackson = 189; 
+var You = 187
 
 var refresh = 32;
 var refresh_2 = 13;
@@ -56,11 +57,11 @@ var random_position = function(element){
 };
 
 
-var mines = new Array;
+var foods = new Array;
 
-var check_mines = function(){
-    mines = document.getElementsByClassName('mine');
-    return mines;
+var check_foods = function(){
+    foods = document.getElementsByClassName('food');
+    return foods;
 };
 
 
@@ -129,27 +130,27 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     
    for(var i=0; i < Math.round( (Math.random()*1000)*2); i++){
-        mine = document.createElement('li');
-        mine.setAttribute('id','mine_'+i);
-        mine.setAttribute('class','mine');
-        mine.style.fontSize = '1.5em';
-        mine.style.width = '70px';
-        mine.style.height = '55px';
-        mine.textContent = '';
-        mine.style.backgroundImage = "url('/images/food_better.png')";
-        mine.style.backgroundSize = '70px 70px';
-        mine.style.backgroundRepeat = 'no-repeat';
-        mine.style.position = 'absolute';
-        mine.style.left = 0;
-        mine.style.top = 0;
-        mine.style.left = Math.random()* container.offsetWidth - 30 + 'px';
-        mine.style.top =  Math.random()* container.offsetHeight - 30 + 'px';
-        mine.style.color = '#EFBF1B';
-        mine.style.textAlign = 'center';
-        mine.style.paddingBottom = '10px';
-        mine.style.borderRadius = '40%';
+        food = document.createElement('li');
+        food.setAttribute('id','food_'+i);
+        food.setAttribute('class','food');
+        food.style.fontSize = '1.5em';
+        food.style.width = '70px';
+        food.style.height = '55px';
+        food.textContent = '';
+        food.style.backgroundImage = "url('/images/food_better.png')";
+        food.style.backgroundSize = '70px 70px';
+        food.style.backgroundRepeat = 'no-repeat';
+        food.style.position = 'absolute';
+        food.style.left = 0;
+        food.style.top = 0;
+        food.style.left = Math.random()* container.offsetWidth - 30 + 'px';
+        food.style.top =  Math.random()* container.offsetHeight - 30 + 'px';
+        food.style.color = '#EFBF1B';
+        food.style.textAlign = 'center';
+        food.style.paddingBottom = '10px';
+        food.style.borderRadius = '40%';
 
-        container.appendChild(mine);
+        container.appendChild(food);
    };
 
     
@@ -159,15 +160,15 @@ document.addEventListener('DOMContentLoaded',function(event){
 document.addEventListener('keydown',function(event){
 
     if(up){
-      check_mines();
-      for(var i=0; i< mines.length; i++){
-                  if(overlap(snake,mines[i]) === true){
-                      mines[i].remove();
-                      check_mines();
+      check_foods();
+      for(var i=0; i< foods.length; i++){
+                  if(overlap(snake,foods[i]) === true){
+                      foods[i].remove();
+                      check_foods();
                   };
       };
     
-      if(mines.length === 0){
+      if(foods.length === 0){
           document.body.textContent = 'DONE!';
           document.body.setAttribute('id','done')
           document.body.style.backgroundColor = '#33A82F';
@@ -324,10 +325,6 @@ document.addEventListener('keydown',function(event){
         snake.style.backgroundImage = "url('/images/carbajal.png')";
         container.style.backgroundImage = "url('/images/carbajal_wallpaper.jpg')";
     };
-    if(event.keyCode === kaleb){
-        snake.style.backgroundImage = "url('/images/kaleb.png')";
-        container.style.backgroundImage = "url('/images/kaleb_wallpaper.jpg')";
-    };
     if(event.keyCode === michael){
         snake.style.backgroundImage = "url('/images/michael.png')";
         container.style.backgroundImage = "url('/images/michael_wallpaper.png')";
@@ -335,5 +332,9 @@ document.addEventListener('keydown',function(event){
     if(event.keyCode === jackson){
         snake.style.backgroundImage = "url('/images/Jackson.png')";
         container.style.backgroundImage = "url('/images/Jackson_wallpaper.png')";
+    };
+    if(event.keyCode === You){
+        snake.style.backgroundImage = "url('/images/Empty.png')";
+        container.style.backgroundImage = "url('/images/F_you.jpg')";
     };
 });

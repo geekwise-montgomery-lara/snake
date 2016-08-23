@@ -38,11 +38,11 @@ html,body{
 }
 
 
-#mine{
+#food{
     display:inline;
     font-size:3rem;
 }
 
-.mine_on{
+.food_on{
     display:none;
 }
