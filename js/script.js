@@ -10,6 +10,7 @@ var left = 65;
 var right = 68;
 
 var Cogan = 96;
+var Cogan_ = 16;
 var Scott = 97;
 var Davis = 98;
 var Darrian = 99;
@@ -238,6 +239,11 @@ document.addEventListener('keydown',function(event){
     
     
     if(event.keyCode === Cogan){
+        snake.style.backgroundImage = "url('/images/MrCogan.png')";
+        container.style.backgroundImage = "url('/images/campus.PNG')";
+    };
+    
+    if(event.keyCode === Cogan_){
         snake.style.backgroundImage = "url('/images/MrCogan.png')";
         container.style.backgroundImage = "url('/images/campus.PNG')";
     };
